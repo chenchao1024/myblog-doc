@@ -1,0 +1,18 @@
+{
+  "name": "myblog-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.36",
+    "vuepress-plugin-cursor-effects": "^1.1.2",
+    "vuepress-theme-hope": "^2.0.0-beta.28"
+  }
+}

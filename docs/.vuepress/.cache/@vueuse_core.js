@@ -23,8 +23,8 @@ import {
   unref,
   watch,
   watchEffect
-} from "./chunk-7JADQX35.js";
-import "./chunk-MIS5Z2YU.js";
+} from "./chunk-PELWFURQ.js";
+import "./chunk-YSBCWZZI.js";
 import {
   init_define_ARTICLE_INFO_LOCALES,
   init_define_BACK_TO_TOP_LOCALES,

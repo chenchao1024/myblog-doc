@@ -9,7 +9,7 @@ export const data = {
     "category": [
       "使用指南"
     ],
-    "summary": "主要功能与配置演示 页面展示; Markdown 展示; 禁用展示; 加密展示;",
+    "summary": "主要功能与配置演示\r页面展示; \rMarkdown 展示; \r禁用展示; \r加密展示;",
     "head": [
       [
         "meta",
@@ -57,10 +57,22 @@ export const data = {
   },
   "excerpt": "",
   "headers": [],
-  "git": {},
   "readingTime": {
     "minutes": 0.09,
     "words": 28
   },
   "filePathRelative": "zh/guide/README.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

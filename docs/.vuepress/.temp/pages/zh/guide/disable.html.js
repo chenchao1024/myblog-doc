@@ -80,10 +80,22 @@ export const data = {
   },
   "excerpt": "<p>你可以通过设置页面的 Frontmatter，在页面禁用一些功能。</p>\n",
   "headers": [],
-  "git": {},
   "readingTime": {
     "minutes": 0.25,
     "words": 74
   },
   "filePathRelative": "zh/guide/disable.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

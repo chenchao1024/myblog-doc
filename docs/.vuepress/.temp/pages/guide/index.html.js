@@ -9,7 +9,7 @@ export const data = {
     "category": [
       "Guide"
     ],
-    "summary": "Guides Page Config; Markdown Enhance; Function Disable; Encryption Demo;",
+    "summary": "Guides\rPage Config; \rMarkdown Enhance; \rFunction Disable; \rEncryption Demo;",
     "head": [
       [
         "meta",
@@ -57,10 +57,22 @@ export const data = {
   },
   "excerpt": "",
   "headers": [],
-  "git": {},
   "readingTime": {
     "minutes": 0.04,
     "words": 13
   },
   "filePathRelative": "guide/README.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

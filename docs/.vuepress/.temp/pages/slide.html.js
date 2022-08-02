@@ -7,7 +7,7 @@ export const data = {
     "title": "Slide page",
     "icon": "slides",
     "layout": "Slide",
-    "summary": "@slidestart Slide Demo A simple slide demo and useful hints. \" By Mr.Hope. Please scroll mousewheel down to the next slide\" --- Marking Slides 👇 -- Marking Slides Use --- to mark ",
+    "summary": "@slidestart Slide Demo A simple slide demo and useful hints.\r\" By Mr.Hope. Please scroll mousewheel down to the next slide\" --- Marking Slides 👇 -- Marking Slides Use --- to mark ",
     "head": [
       [
         "meta",
@@ -55,10 +55,22 @@ export const data = {
   },
   "excerpt": "",
   "headers": [],
-  "git": {},
   "readingTime": {
     "minutes": 3.22,
     "words": 965
   },
   "filePathRelative": "slide.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

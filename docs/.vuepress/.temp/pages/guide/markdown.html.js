@@ -179,10 +179,22 @@ export const data = {
       ]
     }
   ],
-  "git": {},
   "readingTime": {
     "minutes": 2.21,
     "words": 664
   },
   "filePathRelative": "guide/markdown.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

@@ -80,10 +80,22 @@ export const data = {
   },
   "excerpt": "<p>You can disable some functions on the page by setting the Frontmatter of the page.</p>\n",
   "headers": [],
-  "git": {},
   "readingTime": {
     "minutes": 0.14,
     "words": 42
   },
   "filePathRelative": "guide/disable.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

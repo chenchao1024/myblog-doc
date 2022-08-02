@@ -15,7 +15,7 @@ export const data = {
       "tag B"
     ],
     "star": true,
-    "summary": "JavaScript学习 简介 JavaScript是一种属于网络的高级脚本语言,已经被广泛用于Web应用开发,常用来为网页添加各式各样的动态功能,为用户提供更流畅美观的浏览效果。通常JavaScript脚本是通过嵌入在HTML中来实现自身的功能的。 组成 ECMAScript，描述了该语言的语法和基本对象。 ; 文档对象模型（DOM），描述处理网页内容的方",
+    "summary": "JavaScript学习 简介 JavaScript是一种属于网络的高级脚本语言,已经被广泛用于Web应用开发,常用来为网页添加各式各样的动态功能,为用户提供更流畅美观的浏览效果。通常JavaScript脚本是通过嵌入在HTML中来实现自身的功能的。 组成\rECMAScript，描述了该语言的语法和基本对象。 ; \r文档对象模型（DOM），描述处理网页内容的",
     "head": [
       [
         "meta",
@@ -212,10 +212,22 @@ export const data = {
       "children": []
     }
   ],
-  "git": {},
   "readingTime": {
     "minutes": 7.93,
     "words": 2380
   },
   "filePathRelative": "zh/posts/article12.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

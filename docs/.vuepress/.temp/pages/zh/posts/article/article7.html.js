@@ -14,7 +14,7 @@ export const data = {
       "tag A",
       "tag B"
     ],
-    "summary": "设计模式 设计原则：高内聚，低耦合 设计模式(Design Pattern）是前辈们对代码开发经验的总结，是解决特定问题的一系列套路 GoF23 它不是语法规定，而是一套用来提高代码可复用性、可维护性、可读性、稳健性以及安全性的解决方案。 单例模式 当在高并发的情况下，假设一秒钟main方法执行了上千次/上万次user对象反复创建，对资源占用严重 \" 这就需",
+    "summary": "设计模式 设计原则：高内聚，低耦合 设计模式(Design Pattern）是前辈们对代码开发经验的总结，是解决特定问题的一系列套路 GoF23 它不是语法规定，而是一套用来提高代码可复用性、可维护性、可读性、稳健性以及安全性的解决方案。 单例模式 当在高并发的情况下，假设一秒钟main方法执行了上千次/上万次user对象反复创建，对资源占用严重\r\" 这就需",
     "head": [
       [
         "meta",
@@ -121,10 +121,22 @@ export const data = {
       "children": []
     }
   ],
-  "git": {},
   "readingTime": {
     "minutes": 2.87,
     "words": 862
   },
   "filePathRelative": "zh/posts/article/article7.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }

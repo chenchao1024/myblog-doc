@@ -14,7 +14,7 @@ export const data = {
       "tag A",
       "tag B"
     ],
-    "summary": "前端汇总 HTML 超文本标记语言（超越文本） head标签一般用于说明一些信息，不直接显示在页面上 body标签一般页面内容，直接显示在页面上 flex弹性布局 div标签：容器标签 自定义没有默认样式 表单标签 滤镜 CSS样式 锚记点 定义 锚记; 发邮件; 页面跳转; 盒子模型 margin padding border 标签选择器 id选择器：只针",
+    "summary": "前端汇总 HTML 超文本标记语言（超越文本） head标签一般用于说明一些信息，不直接显示在页面上 body标签一般页面内容，直接显示在页面上 flex弹性布局 div标签：容器标签 自定义没有默认样式 表单标签 滤镜 CSS样式 锚记点 定义\r锚记; \r发邮件; \r页面跳转; 盒子模型 margin padding border 标签选择器 id选择器：",
     "head": [
       [
         "meta",
@@ -200,10 +200,22 @@ export const data = {
       "children": []
     }
   ],
-  "git": {},
   "readingTime": {
     "minutes": 13.65,
     "words": 4096
   },
   "filePathRelative": "zh/posts/article9.md"
+}
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
 }
